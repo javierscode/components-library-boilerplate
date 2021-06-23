@@ -1,19 +1,21 @@
-import React from "react";
-import { Story, Meta } from "@storybook/react";
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
 
-import Header, { HeaderProps } from "./Header";
+import Header, { HeaderProps } from './Header'
 
-export default {
-    title: "Molecules/Header",
-    component: Header,
-} as Meta;
+const config: Meta = {
+  title: 'Molecules/Header',
+  component: Header,
+}
 
-const Template: Story<HeaderProps> = (args) => <Header {...args} />;
+export default config
 
-export const LoggedIn = Template.bind({});
+const Template: Story<HeaderProps> = (args) => <Header {...args} />
+
+export const LoggedIn = Template.bind({})
 LoggedIn.args = {
-    user: {},
-};
+  user: {},
+}
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+export const LoggedOut = Template.bind({})
+LoggedOut.args = {}
