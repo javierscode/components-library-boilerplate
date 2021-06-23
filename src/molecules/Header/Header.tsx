@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({
   onLogin,
   onLogout,
   onCreateAccount,
-}: HeaderProps) => (
+}) => (
   <header>
     <div className={styles.wrapper}>
       <div>

@@ -3,12 +3,10 @@ import { Story, Meta } from '@storybook/react'
 
 import Header, { HeaderProps } from './Header'
 
-const config: Meta = {
+export default {
   title: 'Molecules/Header',
   component: Header,
-}
-
-export default config
+} as Meta
 
 const Template: Story<HeaderProps> = (args) => <Header {...args} />
 
