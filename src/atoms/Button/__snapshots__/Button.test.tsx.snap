@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When the Button is rendered And is Primary should match with the snapshot 1`] = `
+<div>
+  <button
+    class="button button--medium button--primary"
+    type="button"
+  >
+    Snapshot
+  </button>
+</div>
+`;
+
+exports[`When the Button is rendered And is Secondary should match with the snapshot 1`] = `
+<div>
+  <button
+    class="button button--medium button--primary"
+    type="button"
+  >
+    Snapshot
+  </button>
+</div>
+`;

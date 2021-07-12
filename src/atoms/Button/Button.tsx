@@ -30,13 +30,14 @@ type StyleSize = 'button--small' | 'button--medium' | 'button--large'
 /**
  * Primary UI component for user interaction
  */
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
   label,
+  onClick,
   ...props
-}: ButtonProps) => {
+}: ButtonProps): JSX.Element => {
   const StyleSize: StyleSize = `button--${size}`
 
   return (
@@ -48,6 +49,7 @@ const Button: React.FC<ButtonProps> = ({
         primary ? styles['button--primary'] : styles['button--secondary']
       )}
       style={{ backgroundColor }}
+      onClick={onClick}
       {...props}
     >
       {label}
